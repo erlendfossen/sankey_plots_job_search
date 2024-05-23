@@ -2,7 +2,7 @@
 
 # general template: from source to target
 ## increase value when getting new link for a job
-## remove any nodes that end up with zero (to make cleaner visualization)
+## remove any nodes that end up with zero (to make cleaner visualization). Similar with links ending in zero.
 jobs_template<-list(
   nodes = data.frame(name=c("Applications", "Early interview", "Final interview", "Offer", "Rejected", "Withdrawn", "Offer accepted", "Offer rejected", "Ghosted")),
   links = data.frame(source = c(0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3),
@@ -14,17 +14,17 @@ jobs_template<-list(
 
 jobs2020_2021<-list(
   nodes = data.frame(name=c("Applications", "Early interview", "Final interview", "Offer", "Rejected", "Withdrawn", "Offer accepted", "Offer rejected", "Ghosted")),
-  links = data.frame(source =  c(0,  0, 0,  0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3),
-                      target = c(1,  2, 4,  5, 8, 2, 4, 5, 8, 3, 4, 5, 8, 6, 7),
-                      value =  c(12, 3, 41, 1, 5, 3, 6, 3, 0, 2, 3, 1, 0, 1, 1))
+  links = data.frame(source =  c(0,  0, 0,  0, 0, 1, 1, 1, 2, 2, 2, 2, 3, 3),
+                      target = c(1,  2, 4,  5, 8, 2, 4, 5, 3, 4, 5, 8, 6, 7),
+                      value =  c(12, 3, 41, 1, 5, 3, 6, 3, 2, 3, 1, 0, 1, 1))
 )
 
 
 jobs2022_2024<-list(
   nodes = data.frame(name=c("Applications", "Early interview", "Final interview", "Offer", "Rejected", "Offer accepted", "Offer rejected", "Ghosted")),
-  links = data.frame(source = c(0,  0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3),
-                     target = c(1,  2, 4, 5, 7, 2, 4, 5, 7, 3, 4, 5, 7, 5, 6),
-                     value =  c(11, 2, 9, 0, 3, 2, 7, 0, 2, 2, 2, 0, 0, 1, 1))
+  links = data.frame(source = c(0,  0, 0, 0, 1, 1, 1, 2, 2, 3, 3),
+                     target = c(1,  2, 4, 7, 2, 4, 7, 3, 4, 5, 6),
+                     value =  c(11, 2, 9, 3, 2, 7, 2, 2, 2, 1, 1))
 )
 
 
